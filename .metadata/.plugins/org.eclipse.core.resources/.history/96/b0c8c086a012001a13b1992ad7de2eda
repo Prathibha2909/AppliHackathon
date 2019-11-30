@@ -1,0 +1,17 @@
+package com.java.hackathon;
+
+import org.openqa.selenium.WebDriver;
+
+public class Traditional {
+	
+	public static WebDriver driver;
+	
+	public static String ELEMENT_Username= "//input[@id='username']"; 
+	public static String ELEMENT_Password= "//input[@id='password']";
+	public static String ELEMENT_Login= "//button[@id='log-in']";
+	public static String ELEMENT_ErorMsg= "//div[@class='alert alert-warning']";
+	
+		
+	}
+
+

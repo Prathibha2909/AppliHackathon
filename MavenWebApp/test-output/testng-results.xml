@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38757" started-at="2019-11-30T16:15:07Z" finished-at="2019-11-30T16:15:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38757" started-at="2019-11-30T16:15:07Z" finished-at="2019-11-30T16:15:46Z">
+      <class name="com.java.hackathon.Traditional">
+        <test-method status="PASS" signature="hackathonTest1()[pri:1, instance:com.java.hackathon.Traditional@adede5]" name="hackathonTest1" duration-ms="20680" started-at="2019-11-30T16:15:07Z" finished-at="2019-11-30T16:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hackathonTest1 -->
+        <test-method status="PASS" signature="takeScreenShot()[pri:0, instance:com.java.hackathon.Traditional@adede5]" name="takeScreenShot" is-config="true" duration-ms="743" started-at="2019-11-30T16:15:28Z" finished-at="2019-11-30T16:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="hackathonLogin2()[pri:2, instance:com.java.hackathon.Traditional@adede5]" name="hackathonLogin2" duration-ms="2728" started-at="2019-11-30T16:15:29Z" finished-at="2019-11-30T16:15:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hackathonLogin2 -->
+        <test-method status="PASS" signature="takeScreenShot()[pri:0, instance:com.java.hackathon.Traditional@adede5]" name="takeScreenShot" is-config="true" duration-ms="773" started-at="2019-11-30T16:15:31Z" finished-at="2019-11-30T16:15:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="hackathonLogin3()[pri:3, instance:com.java.hackathon.Traditional@adede5]" name="hackathonLogin3" duration-ms="13653" started-at="2019-11-30T16:15:32Z" finished-at="2019-11-30T16:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hackathonLogin3 -->
+        <test-method status="FAIL" signature="takeScreenShot()[pri:0, instance:com.java.hackathon.Traditional@adede5]" name="takeScreenShot" is-config="true" duration-ms="24" started-at="2019-11-30T16:15:46Z" finished-at="2019-11-30T16:15:46Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-U2O4L2R', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-U2O4L2R', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.java.hackathon.Traditional.takeScreenShot(Traditional.java:162)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="SKIP" signature="hackathonLogin4()[pri:4, instance:com.java.hackathon.Traditional@adede5]" name="hackathonLogin4" duration-ms="0" started-at="2019-11-30T16:15:46Z" finished-at="2019-11-30T16:15:46Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-U2O4L2R', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-U2O4L2R', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.java.hackathon.Traditional.takeScreenShot(Traditional.java:162)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hackathonLogin4 -->
+        <test-method status="SKIP" signature="takeScreenShot()[pri:0, instance:com.java.hackathon.Traditional@adede5]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-11-30T16:15:46Z" finished-at="2019-11-30T16:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+      </class> <!-- com.java.hackathon.Traditional -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

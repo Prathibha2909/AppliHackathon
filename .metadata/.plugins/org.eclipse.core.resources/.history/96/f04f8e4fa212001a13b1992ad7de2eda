@@ -1,0 +1,51 @@
+package com.java.hackathon;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Traditional {
+	
+	public static WebDriver driver;
+	
+	public static String ELEMENT_Username= "//input[@id='username']"; 
+	public static String ELEMENT_Password= "//input[@id='password']";
+	public static String ELEMENT_Login= "//button[@id='log-in']";
+	public static String ELEMENT_ErorMsg= "//div[@class='alert alert-warning']";
+	public static String UN = "admin";
+	public static String PW = "admin";
+	public static String ELEMENT_Amount = "//th[@id='amount']";
+	public static String ELEMENT_CompareExpenses = "//a[@id='showExpensesChart']";
+	public static String ELEMENT_AmountSort ="//span[text()='Today']";
+	public static String ELEMENT_ExpenseChart ="//canvas[@id='canvas']";
+	
+	public void enterUserCredentials(String UN) {
+		
+		driver.findElement(By.id(ELEMENT_Username)).sendKeys(UN);
+		driver.findElement(By.id(ELEMENT_Password)).sendKeys(PW);
+		System.out.println("Entered the usercredentials");
+		
+	}
+	
+	public void clickLogin() {
+		
+		driver.findElement(By.id(ELEMENT_Login)).click();
+		System.out.println("Login clicked");
+	}
+		
+	public void errorMsg() {
+		
+		String actualMsg = "must be present";
+		String errorMessage = driver.findElement(By.xpath(ELEMENT_ErorMsg)).getText();
+		System.out.println(errorMessage);
+		if (errorMessage.contains(actualMsg)) {
+			
+			System.out.println("Error message is displayed");
+		}else
+			System.out.println("error message not displayed");
+		
+	}
+	
+	
+	}
+
+
